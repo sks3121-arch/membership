@@ -4,116 +4,42 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#082f3c" />
-  <meta name="description" content="오션비치 골프앤리조트 콘도회원권 상담 안내" />
+  <meta name="description" content="오션비치 골프앤리조트 회원권 전체 목록과 신규 모집 안내" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="오션비치 골프앤리조트" />
-  <meta property="og:title" content="오션비치 골프앤리조트 | 회원권 상담" />
-  <meta property="og:description" content="동해 바다 위에 펼쳐진 씨사이드 27홀과 오션뷰 콘도미니엄. 회원권 상담을 받아보세요." />
+  <meta property="og:title" content="오션비치 골프앤리조트 | 회원권 전체 안내" />
+  <meta property="og:description" content="현재 모집 중인 회원권과 주요 혜택을 한눈에 확인하세요." />
   <meta property="og:image" content="assets/ob-aerial.jpg" />
   <meta property="og:image:alt" content="동해를 바라보는 오션비치 골프앤리조트" />
   <meta name="twitter:card" content="summary_large_image" />
-  <title>오션비치 골프앤리조트 | 회원권 상담</title>
+  <title>회원권 전체 안내 | 오션비치 골프앤리조트</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="catalog.css" />
 </head>
-<body>
-  <header class="topbar">
-    <a class="brand" href="#top" aria-label="오션비치 홈">
-      <img src="assets/logo.webp" alt="Ocean Beach Golf & Resort" />
-    </a>
+<body class="catalog-page">
+  <header class="topbar catalog-topbar">
+    <a class="brand" href="./" aria-label="회원권 전체 목록"><img src="assets/logo.webp" alt="Ocean Beach Golf & Resort" /></a>
     <a class="top-call" href="tel:01088272585">전화 상담 <span>010-8827-2585</span></a>
   </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="hero-image"></div>
-      <div class="hero-shade"></div>
-      <div class="hero-copy">
-        <p class="eyebrow light">OCEAN BEACH GOLF & RESORT</p>
-        <p class="kicker">콘도회원권 신규 회원 모집</p>
-        <h1>동해 바다 위에 펼쳐진<br /><em>프리미엄 휴양</em></h1>
-        <p class="hero-desc">씨사이드 27홀 · 전 객실 오션뷰 콘도미니엄<br />골프와 휴양을 하나의 회원권으로 누리세요.</p>
-        <a class="button button-light" href="tel:01088272585">전화로 바로 상담하기 <span>→</span></a>
-      </div>
-      <div class="scroll-cue">SCROLL <span></span></div>
+  <main>
+    <section class="catalog-hero">
+      <div class="catalog-hero-image"></div><div class="catalog-hero-shade"></div>
+      <div class="catalog-hero-copy"><p class="eyebrow light">MEMBERSHIP COLLECTION</p><h1>회원만을 위한<br /><em>프리미엄 라이프</em></h1><p>모집 중인 회원권의 주요 조건과 혜택을<br />한눈에 비교하고 상담받으세요.</p><a class="button button-light" href="#membership-list">회원권 전체 보기 <span>↓</span></a></div>
     </section>
-
-    <section class="intro section-pad">
-      <p class="eyebrow">A PRIVATE HORIZON</p>
-      <h2>자연과 마주하는<br /><em>오션 · 비치 · 밸리</em></h2>
-      <p class="body-copy">경북 영덕 46만 평 부지, 동해 바다 위에 펼쳐진 씨사이드 27홀과 전 객실 오션뷰 콘도미니엄 58실. 동해안 대표 골프&리조트에서 회원의 시간을 시작하세요.</p>
-      <div class="stat-grid">
-        <div><strong>27</strong><span>홀 · Par 108</span></div>
-        <div><strong>58</strong><span>실 · 전 객실 오션뷰</span></div>
-        <div><strong>46<span>만</span></strong><span>평 리조트 부지</span></div>
-      </div>
+    <section id="membership-list" class="catalog-list section-pad">
+      <p class="eyebrow">MEMBERSHIP LIST</p><h2>모집 중인<br /><em>회원권 안내</em></h2><p class="body-copy">새로운 회원권은 이 목록에 순서대로 추가됩니다. 관심 있는 상품을 선택해 상세 혜택을 확인하세요.</p>
+      <p class="latest-label"><span></span> 최근 등록</p>
+      <article class="membership-item is-latest">
+        <img src="assets/ob-aerial.jpg" alt="오션비치 골프앤리조트 전경" />
+        <div class="membership-item-copy"><p class="item-category">GOLF &amp; RESORT MEMBERSHIP</p><h3>오션비치 골프앤리조트</h3><p>동해 씨사이드 27홀과 전 객실 오션뷰 콘도미니엄을 하나의 회원권으로 누리세요.</p><ul><li>씨사이드 27홀 · Par 108</li><li>전 객실 오션뷰 콘도미니엄 58실</li><li>밸리 · 골드 · 시그니처 · 프리미엄 라인</li></ul><a class="item-link" href="oceanbeach/">상세 혜택 확인하기 <span>→</span></a></div>
+      </article>
     </section>
-
-    <section class="feature-photo">
-      <img src="assets/ob-course.jpg" alt="오션비치 씨사이드 코스와 동해" />
-      <div class="photo-label"><span>01</span><strong>바다와 골프가<br />만나는 곳</strong></div>
-    </section>
-
-    <section class="experience section-pad dark-section">
-      <p class="eyebrow light">THE OCEAN BEACH LIFE</p>
-      <h2>하루의 모든 순간이<br /><em>리조트가 됩니다</em></h2>
-      <p class="muted">전 홀 라이트 설치로 즐기는 3부 야간 라운딩부터 오션뷰 객실, 수영장과 다이닝까지.</p>
-      <div class="experience-list">
-        <figure><img src="assets/ob-night.jpg" alt="야간 라운딩" /><figcaption>전 홀 야간 라운딩</figcaption></figure>
-        <figure><img src="assets/ob-room.jpg" alt="복층형 오션뷰 객실" /><figcaption>오션뷰 객실</figcaption></figure>
-        <figure><img src="assets/ob-pool.jpg" alt="야외 수영장" /><figcaption>야외 수영장</figcaption></figure>
-        <figure><img src="assets/ob-dining.jpg" alt="오션뷰 레스토랑" /><figcaption>오션뷰 다이닝</figcaption></figure>
-        <figure><img src="assets/ob-screen.jpg" alt="스크린골프장" /><figcaption>스크린골프</figcaption></figure>
-      </div>
-      <p class="tour-note">KLPGA 2026 드림&챔피언스투어 개최지</p>
-    </section>
-
-    <section class="membership section-pad">
-      <p class="eyebrow">MEMBERSHIP</p>
-      <h2>라이프스타일에 맞는<br /><em>회원권을 선택하세요</em></h2>
-      <p class="body-copy">입회금과 이용 패턴에 맞춰 선택할 수 있는 대표 상품입니다. 정확한 조건은 상담으로 안내받으실 수 있습니다.</p>
-      <div class="cards">
-        <article class="plan-card"><div class="plan-head"><span>VALLEY · 1/36</span><h3>밸리</h3><strong>4,900<small>만원</small></strong></div><ul><li><b>회원 구성</b>기명 1인 · 4인 1팀 라운딩</li><li><b>골프 부킹</b>월 4회 (주중 3회 · 주말 1회)</li><li><b>그린피</b>주중 8만 · 주말 10만<br />동반 주중 9만 · 주말 11만</li><li><b>콘도 이용</b>연 10박 · 47평형 이하</li><li><b>이스트원</b>개장 시 준회원 대우</li></ul></article>
-        <article class="plan-card featured"><div class="popular">BEST CHOICE</div><div class="plan-head"><span>GOLD · 1/36</span><h3>골드</h3><strong>4,900<small>만원</small></strong></div><ul><li><b>회원 구성</b>기명 1인 + 지정 1인</li><li><b>골프 부킹</b>연 20회 (주중 12회 · 주말 8회)</li><li><b>그린피</b>주중 7만 · 주말 9만<br />동반 주중 8만 · 주말 10만</li><li><b>콘도 이용</b>연 10박 · 47평형 이하</li><li><b>이스트원</b>개장 시 준회원 대우</li></ul></article>
-        <article class="plan-card"><div class="plan-head"><span>SIGNATURE · 1/24</span><h3>시그니처</h3><strong>1<small>억원</small></strong></div><ul><li><b>회원 구성</b>기명 1인 + 지정 1인</li><li><b>골프 부킹</b>월 6회 (주중 4회 · 주말 2회)</li><li><b>위임 라운딩</b>횟수 내 3회 가능</li><li><b>그린피</b>주중 7만 · 주말 9만<br />동반 8만 · 10만 / 위임 10만 · 11만</li><li><b>콘도 이용</b>연 15박 · 47평형 이하</li><li><b>이스트원</b>개장 시 준회원 대우</li></ul></article>
-      </div>
-      <p class="membership-note">골프 3부 이용 시 횟수 차감 없이 회원가가 적용됩니다. (주중·주말 교차 사용 불가)</p>
-      <section class="premium" aria-label="프리미엄 라인 안내">
-        <div class="premium-intro"><span>PREMIUM LINE</span><h3>더 넓어진 혜택, 프리미엄 회원권</h3><p>무기명 구성과 이스트원 정회원 대우까지, 이용의 폭이 달라지는 상위 구좌입니다.</p></div>
-        <div class="premium-plans">
-          <article class="premium-card"><div><span>PLATINUM</span><strong>2.4<small>억원</small></strong></div><p>월 12회 부킹 · 위임 6회<br />그린피 주중 6만 · 주말 8만<br />무기명 9만 · 10만<br />콘도 연 30박 · 70평형 이하</p></article>
-          <article class="premium-card"><div><span>VIP</span><strong>8<small>억원</small></strong></div><p>무기명 2인 · 월 22회 부킹<br />그린피 주중 3만 · 주말 4만<br />콘도 연 60박 · 전 평형<br />KTX역·공항 송영 · 이스트원 정회원 대우</p></article>
-          <article class="premium-card"><div><span>DIAMOND</span><strong>12<small>억원</small></strong></div><p>완전 무기명 · 월 30회 부킹<br />그린피 주중 3만 · 주말 4만<br />콘도 연 72박 · 전 평형<br />이스트원 정회원 대우</p></article>
-        </div>
-        <p class="premium-note">상품별 상세 이용 조건은 상담을 통해 확인해 주세요.</p>
-      </section>
-      <section class="benefits" aria-label="신규회원 특별 혜택">
-        <p class="eyebrow">SPECIAL BENEFITS</p>
-        <h2>신규회원<br /><em>특별 혜택</em></h2>
-        <div class="benefit-list">
-          <article><span>국내 제휴</span><p>여수 디오션 · 제주 엘리시안CC · 제주 아덴힐CC</p><strong>준회원 대우</strong></article>
-          <article><span>해외 제휴</span><p>일본 오카야마 랜드마크CC<br />그린피·숙박 50% 할인</p><p>태국 치앙라이 해피시티 회원 대우<br />사이판 라오라오CC 제휴가 할인</p></article>
-          <article><span>부대업장</span><p>야외 수영장 · 스크린골프 · 대연회장 · 세미나실</p><strong>50% 할인</strong></article>
-          <article><span>이스트원</span><p>개장 시 준회원 대우</p><strong>VIP · 다이아몬드 정회원 대우</strong></article>
-        </div>
-        <p class="benefit-note">제휴 골프장은 ㈜오션비치를 통한 사전 예약으로 이용하실 수 있습니다.</p>
-      </section>
-    </section>
-
-    <section class="eastone section-pad">
-      <div class="eastone-copy"><p class="eyebrow">COMING 2030</p><h2>동쪽의 최고를 꿈꾸는<br /><em>이스트원 골프&리조트</em></h2><p class="body-copy">정규 27홀 럭셔리 골프&리조트. 지금 입회하시는 회원님은 개장 시 준회원 대우로, VIP·다이아몬드 회원은 정회원 대우로 교차 이용하실 수 있습니다.</p></div>
-      <img src="assets/eastone-clubhouse.jpg" alt="이스트원 클럽하우스 및 콘도미니엄 조감도" />
-      <p class="caption">2027년 상반기 착공 · 2030년 상반기 준공 예정 · 인허가 및 공사 진행 상황에 따라 변경될 수 있습니다.</p>
-    </section>
-
-    <section class="contact section-pad">
-      <div class="contact-inner"><p class="eyebrow light">MEMBERSHIP CONSULTING</p><h2>동해의 프리미엄,<br /><em>지금 확인하세요</em></h2><p>상품별 상세 조건과 입회 절차를<br />전문 상담사가 친절히 안내드립니다.</p><a class="button button-gold" href="tel:01088272585">☎ 010-8827-2585 전화 상담</a><a class="sms-link" href="sms:01088272585?body=오션비치 회원권 상담 요청드립니다.">문자로 상담 요청하기 →</a></div>
-    </section>
+    <section class="catalog-callout section-pad"><p class="eyebrow light">MEMBERSHIP CONSULTING</p><h2>나에게 맞는 회원권,<br /><em>상담으로 확인하세요</em></h2><p>입회 조건과 상품별 세부 혜택을<br />전문 상담사가 안내드립니다.</p><a class="button button-gold" href="tel:01088272585">☎ 010-8827-2585 전화 상담</a><a class="sms-link" href="sms:01088272585?body=오션비치 회원권 상담 요청드립니다.">문자로 상담 요청하기 →</a></section>
   </main>
-
   <footer><img src="assets/logo.webp" alt="Ocean Beach Golf & Resort" /><p>㈜오션비치 · 경상북도 영덕군 강구면 동해대로 4265-43</p><small>본 페이지는 ㈜오션비치 콘도회원권 판매대행 안내이며, 모집 조건과 혜택은 회칙 및 규정에 따릅니다.</small></footer>
   <a class="floating-call" href="tel:01088272585" aria-label="전화 상담">☎ <span>전화 상담</span></a>
 </body>
