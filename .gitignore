@@ -1,6 +1,7 @@
 # Local tools and caches
 .transcription-tools/
 __pycache__/
+dist/
 
 # OS files
 Thumbs.db

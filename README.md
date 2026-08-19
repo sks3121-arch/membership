@@ -7,13 +7,14 @@
 - `/` : 최근 등록 회원권 1건 안내
 - `/memberships/` : 회원권 전체 목록
 - `/oceanbeach/` : 오션비치 골프앤리조트 회원권 상세 안내
-- `/wooji/` : 우지 리조트 테스트 상세 페이지
 
 카카오톡으로 전체 안내를 보낼 때는 루트 URL을, 특정 상품 홍보에는 해당 상품의 상세 URL을 사용하세요.
 
 ## 신규 회원권 등록 순서
 
 `membership-data.js`에 상품 정보를 추가하고 `date`를 `YYYY-MM-DD` 형식으로 입력하세요. 등록일이 가장 최신인 상품이 첫 페이지에 자동으로 표시되고, 전체 목록은 최신순으로 정렬됩니다.
+
+Cloudflare Pages에서는 Build command를 `node build.js`, Build output directory를 `dist`로 설정하세요. 배포할 때 최신 상품의 카카오톡 공유 제목·설명·대표 이미지도 자동으로 갱신됩니다.
 
 ## 가장 쉬운 배포 방법: Netlify
 

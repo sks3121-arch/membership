@@ -1,16 +1,5 @@
 const memberships = [
   {
-    title: "우지 리조트",
-    date: "2026-08-19",
-    category: "TEST MEMBERSHIP · SAMPLE",
-    image: "assets/ob-course.jpg",
-    alt: "우지 리조트 테스트 이미지",
-    description: "새 회원권을 등록할 때의 화면과 카카오톡 공유 흐름을 확인하기 위한 테스트 상세 페이지입니다.",
-    benefits: ["테스트용 상품 안내", "모바일 상세 페이지 확인", "전화·문자 상담 링크 연결"],
-    href: "wooji/",
-    linkText: "테스트 페이지 보기"
-  },
-  {
     title: "오션비치 골프앤리조트",
     date: "2026-08-01",
     category: "GOLF & RESORT MEMBERSHIP",
@@ -40,12 +29,18 @@ function membershipCard(item, latest = false) {
   </article>`;
 }
 
-const latestContainer = document.querySelector("[data-membership-latest]");
-if (latestContainer && sortedMemberships[0]) {
-  latestContainer.innerHTML = membershipCard(sortedMemberships[0], true);
+if (typeof document !== "undefined") {
+  const latestContainer = document.querySelector("[data-membership-latest]");
+  if (latestContainer && sortedMemberships[0]) {
+    latestContainer.innerHTML = membershipCard(sortedMemberships[0], true);
+  }
+
+  const listContainer = document.querySelector("[data-membership-list]");
+  if (listContainer) {
+    listContainer.innerHTML = sortedMemberships.map((item, index) => membershipCard(item, index === 0)).join("");
+  }
 }
 
-const listContainer = document.querySelector("[data-membership-list]");
-if (listContainer) {
-  listContainer.innerHTML = sortedMemberships.map((item, index) => membershipCard(item, index === 0)).join("");
+if (typeof module !== "undefined") {
+  module.exports = { memberships };
 }
