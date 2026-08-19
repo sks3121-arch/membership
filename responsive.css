@@ -1,0 +1,238 @@
+/* Smartphone-first layout, including desktop preview. */
+html,
+body {
+  overflow-x: hidden;
+}
+
+.hero-image {
+  background-image: url("assets/ob-aerial.jpg");
+}
+
+body {
+  width: 100%;
+  max-width: 480px;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-shadow: 0 0 45px rgba(0, 0, 0, .12);
+}
+
+.topbar {
+  height: 32px;
+  left: 50%;
+  right: auto;
+  width: 100%;
+  max-width: 480px;
+  min-width: 0;
+  transform: translateX(-50%);
+  padding: 0 18px;
+}
+
+.brand {
+  flex: 0 0 auto;
+}
+
+.brand img {
+  width: auto;
+  height: 32px;
+  max-width: 43vw;
+  object-fit: contain;
+}
+
+.top-call {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+  font-size: 11px;
+  letter-spacing: -.03em;
+}
+
+.top-call span {
+  margin-left: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+li,
+figcaption {
+  word-break: keep-all;
+}
+
+.hero-copy {
+  padding-right: 6%;
+}
+
+.hero-desc,
+.body-copy,
+.muted {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.membership h2,
+.eastone h2 {
+  font-size: clamp(24px, 6.5vw, 30px);
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  overflow: visible;
+  margin: 34px 0 0;
+  padding: 0;
+}
+
+.plan-card {
+  min-width: 0;
+  width: 100%;
+}
+
+.premium {
+  padding: 24px 20px;
+}
+
+.premium-intro h3 {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.premium-intro p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.premium-plans {
+  display: grid;
+  gap: 10px;
+}
+
+.premium-card {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 12px;
+  padding: 16px 0;
+  border-top: 1px solid #d3cabd;
+}
+
+.premium-card > div {
+  display: grid;
+  align-content: start;
+  gap: 3px;
+}
+
+.premium-card span {
+  color: #a67d48;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.premium-card strong {
+  color: var(--navy);
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  line-height: 1;
+}
+
+.premium-card small {
+  margin-left: 3px;
+  font: 600 11px 'Noto Sans KR', sans-serif;
+}
+
+.premium-card p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.premium-note {
+  margin: 6px 0 0 !important;
+  color: var(--muted);
+  font-size: 10px !important;
+}
+
+.membership-note,
+.benefit-note {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.benefits {
+  margin-top: 54px;
+  padding-top: 54px;
+  border-top: 1px solid #d3cabd;
+}
+
+.benefits h2 {
+  margin-bottom: 26px;
+}
+
+.benefit-list {
+  display: grid;
+  gap: 10px;
+}
+
+.benefit-list article {
+  padding: 17px 16px;
+  background: #f7f5f0;
+  border-left: 2px solid var(--sand);
+}
+
+.benefit-list span {
+  display: block;
+  margin-bottom: 7px;
+  color: #a67d48;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.benefit-list p {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.benefit-list strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--navy);
+  font-size: 12px;
+}
+
+.eastone img {
+  width: 100%;
+  margin: 32px auto 0;
+  object-position: center;
+}
+
+.floating-call {
+  right: max(18px, calc((100vw - 480px) / 2 + 18px));
+}
+
+@media (max-width: 360px) {
+  .brand img {
+    width: auto;
+    height: 32px;
+  }
+
+  .top-call {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 29px;
+  }
+}

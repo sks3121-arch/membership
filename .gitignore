@@ -1,0 +1,7 @@
+# Local tools and caches
+.transcription-tools/
+__pycache__/
+
+# OS files
+Thumbs.db
+Desktop.ini

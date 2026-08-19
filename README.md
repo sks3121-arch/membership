@@ -1,0 +1,23 @@
+# 오션비치 회원권 상담 페이지
+
+정적 웹사이트입니다. 별도의 빌드나 서버 설치가 필요 없습니다.
+
+## 가장 쉬운 배포 방법: Netlify
+
+1. [Netlify Drop](https://app.netlify.com/drop)에 로그인합니다.
+2. 이 폴더 전체를 업로드합니다. `index.html`만 올리지 말고 `assets` 폴더와 CSS 파일도 함께 올려야 합니다.
+3. 발급된 URL을 스마트폰에서 열어 전화·문자 상담 버튼을 확인합니다.
+4. Netlify의 **Domain management**에서 원하는 도메인을 연결합니다.
+
+## 카카오톡 공유 미리보기
+
+- 배포 후 실제 URL을 카카오톡에 한 번 공유해 제목과 이미지가 표시되는지 확인합니다.
+- `index.html`의 `og:image`는 프로젝트 안의 `assets/ob-aerial.jpg`를 사용합니다.
+- 도메인을 연결한 뒤에는 `og:url`에 실제 주소를 추가하면 공유 주소가 더 안정적으로 인식됩니다.
+
+## 수정 위치
+
+- 전화·문자 수신 번호: `index.html`의 `01088272585`
+- 화면 문구: `index.html`
+- 디자인: `styles.css`, `responsive.css`
+- 이미지: `assets` 폴더
