@@ -35,6 +35,13 @@ if (typeof document !== "undefined") {
     latestContainer.innerHTML = membershipCard(sortedMemberships[0], true);
   }
 
+  if (document.body.dataset.latestSharingPage === "true" && sortedMemberships[0]) {
+    const latest = sortedMemberships[0];
+    const title = `${latest.title} | 신규 회원권 안내`;
+    document.title = title;
+    document.querySelector('meta[name="description"]')?.setAttribute("content", `${latest.title} 신규 회원권 안내｜모집 조건과 상담 방법을 확인하세요.`);
+  }
+
   const listContainer = document.querySelector("[data-membership-list]");
   if (listContainer) {
     listContainer.innerHTML = sortedMemberships.map((item, index) => membershipCard(item, index === 0)).join("");
